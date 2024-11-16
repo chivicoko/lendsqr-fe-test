@@ -1,0 +1,452 @@
+nav {
+    background: #fff;
+    -moz-box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.919);
+    -webkit-box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 0 -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    
+    .navBar {
+        padding: 25.5px 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left {
+            .logo {
+                display: block;
+                width: fit-content;
+                
+                .loginLogo {
+                    position: relative;
+                    width: 144.8px;
+                    height: 30px;
+                    
+                    .img {
+                        position: absolute;
+                        object-fit: contain;
+                    }
+                }
+            }
+        
+                
+            .mobileLogo {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                display: none;
+        
+                .breadcrumb {
+                    display: none;
+                }            
+                
+                .logoImg {
+                    display: none;
+                }
+            }
+        }
+        
+        .searchNUserArea {
+            width: 75.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 1.2rem;
+            
+            .userArea {
+                color: #213F7D;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 20px;
+                position: relative;
+    
+                .docsLink {
+                    margin-right: 2rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18.75px;
+                    color: #213F7D;
+                }
+    
+                button.bellIcon {
+                    background: transparent;
+                    border: none;
+                    position: relative;
+                    width: 26px;
+                    height: 26px;
+                    cursor: pointer;
+                    position: relative;
+                    
+                    .img {
+                        object-fit: contain;
+                    }
+    
+                    span {
+                        position: absolute;
+                        top: .2rem;
+                        left: 1.3rem;
+                        transform: translate(-50%, -50%);
+                        font-size: .7rem;
+                        width: .8rem;
+                        height: .8rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        transition: color 0.3s ease-in-out;
+                        background: #213F7D;
+                        border-radius: 50%;
+                        padding: 5px;
+    
+                    }
+                }
+    
+                button.userIcon {
+                    background: transparent;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+    
+                    .userImg {
+                        position: relative;
+                        width: 48px;
+                        height: 48px;
+                        
+                        .img {
+                            object-fit: contain;
+                        }
+                    }
+    
+                    .userName {
+                        padding-inline: 10px;
+                    }
+    
+                    .userDropdownIcon {
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        
+                        .img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        .navBar {
+            
+            padding: 15.5px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .left {
+                display: flex;
+                
+                .logo {
+                    display: flex;
+                }
+                  
+                .mobileLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+        
+                    .breadcrumb {
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        display: block;
+                        
+                        .loginLogo {
+                            position: relative;
+                            width: 20px;
+                            height: 20px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }            
+                    
+                    .logoImg {
+                        display: none;
+                        
+                        .loginLogo {
+                            position: relative;
+                            width: 21px;
+                            height: 21px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .searchNUserArea {
+                width: auto;
+                gap: 2rem;
+                padding-right: 0;
+                
+                .userArea {
+                    gap: 10px;
+                    padding-right: 0;
+                    position: relative;
+    
+                    .docsLink {
+                        margin-right: .7rem;
+                        font-size: 14px;
+                        line-height: 15.75px;
+                    }
+    
+                    button.bellIcon {
+                        width: 22px;
+                        height: 22px;
+    
+                        span {
+                            font-size: .6rem;
+                            width: .6rem;
+                            height: .6rem;
+                        }
+                    }
+    
+                    button.userIcon {
+    
+                        .userImg {
+                            width: 38px;
+                            height: 38px;
+                        }
+    
+                        .userName {
+                            padding-inline: 5px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        .navBar {
+            padding: 15.5px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+    
+            .left {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                
+                .logo {
+                    display: block;
+                    
+                    .loginLogo {
+                        width: 104.8px;
+                        
+                        .img {
+                            position: absolute;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                
+                .mobileLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    
+                    .breadcrumb {
+                        border: none;
+                        cursor: pointer;
+                        display: block;
+                        z-index: 9;
+    
+                        .loginLogo {
+                            position: relative;
+                            width: 20px;
+                            height: 20px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }            
+                    
+                    .logoImg {
+                        display: none;
+                        
+                        .loginLogo {
+                            position: relative;
+                            width: 21px;
+                            height: 21px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .searchNUserArea {
+                width: auto;
+                padding-right: 0;
+                
+                .userArea {
+                    display: none;
+                    gap: 10px;
+                    padding-right: 0;
+                    position: relative;
+    
+                    .docsLink {
+                        margin-right: .7rem;
+                        font-size: 14px;
+                        line-height: 15.75px;
+                    }
+    
+                    button.bellIcon {
+                        width: 22px;
+                        height: 22px;
+    
+                        span {
+                            font-size: .6rem;
+                            width: .6rem;
+                            height: .6rem;
+                        }
+                    }
+    
+                    button.userIcon {
+    
+                        .userImg {
+                            width: 38px;
+                            height: 38px;
+                        }
+    
+                        .userName {
+                            padding-inline: 5px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        .navBar {
+            
+            padding: 15.5px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                
+            .left {
+                
+                .logo {
+                    display: none;
+                }
+                  
+                .mobileLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+        
+                    .breadcrumb {
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        display: block;
+        
+                        .loginLogo {
+                            position: relative;
+                            width: 20px;
+                            height: 20px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }            
+                    
+                    .logoImg {
+                        display: block;
+                        
+                        .loginLogo {
+                            position: relative;
+                            width: 21px;
+                            height: 21px;
+                            
+                            .img {
+                                position: absolute;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .searchNUserArea {
+                width: auto;
+                padding-right: 0;
+                
+                .userArea {
+                    display: none;
+                    gap: 10px;
+                    padding-right: 0;
+                    position: relative;
+    
+                    .docsLink {
+                        margin-right: .7rem;
+                        font-size: 14px;
+                        line-height: 15.75px;
+                    }
+    
+                    button.bellIcon {
+                        width: 22px;
+                        height: 22px;
+    
+                        span {
+                            font-size: .6rem;
+                            width: .6rem;
+                            height: .6rem;
+                        }
+                    }
+    
+                    button.userIcon {
+    
+                        .userImg {
+                            width: 38px;
+                            height: 38px;
+                        }
+    
+                        .userName {
+                            padding-inline: 5px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

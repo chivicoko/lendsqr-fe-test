@@ -1,0 +1,86 @@
+[
+  {
+    "id": "672831eb2457ee9a3adb1507",
+    "email": "dean@hotmail.com",
+    "amount": "₦102,586.00",
+    "status": "blacklisted",
+    "profile": {
+      "bvn": "60588999901",
+      "gender": "Male",
+      "children": "1",
+      "maritalStatus": "Married",
+      "typeOfResidence": "Parent's Apartment"
+    },
+    "ratings": 5,
+    "socials": {
+      "twitter": "@clara_campbell",
+      "facebook": "Meyers Vega",
+      "instagram": "@mccall.dean"
+    },
+    "username": "Dean Richards",
+    "guarantor": {
+      "email": "bessie@gmail.com",
+      "fullName": "bessie conway",
+      "phoneNumber": "08087391763",
+      "relationship": "Brother"
+    },
+    "customerId": "vVfPW618Xf90",
+    "dateJoined": "Jul 6, 2022 12:57 PM",
+    "loanAmount": "₦965,098.00",
+    "phoneNumber": "08052228028",
+    "organization": "Flumbo",
+    "accountNumber": "6148844574",
+    "savingsAmount": "₦625,440.00",
+    "educationAndEmployment": {
+      "officeEmail": "brown@idetica.com",
+      "loanRepayment": "₦32,931",
+      "monthlyIncome": "₦160,918 - ₦775,043",
+      "employmentStatus": "Employed",
+      "levelOfEducation": "M.Sc",
+      "sectorOfEmployment": "Education",
+      "durationOfEmployment": "1 years"
+    }
+  },
+  {
+    "id": "672831eb07bbd7e5495880c8",
+    "email": "mclean@hotmail.com",
+    "amount": "₦917,767.00",
+    "status": "blacklisted",
+    "profile": {
+      "bvn": "99873344682",
+      "gender": "Male",
+      "children": "None",
+      "maritalStatus": "Single",
+      "typeOfResidence": "Rented Apartment"
+    },
+    "ratings": 5,
+    "socials": {
+      "twitter": "@bertha_hicks",
+      "facebook": "Stafford Hinton",
+      "instagram": "@iris.stafford"
+    },
+    "username": "Mclean Roman",
+    "guarantor": {
+      "email": "karin@gmail.com",
+      "fullName": "karin franklin",
+      "phoneNumber": "08051433877",
+      "relationship": "Parent"
+    },
+    "customerId": "fkCyv841Gw23",
+    "dateJoined": "Nov 25, 2020 03:55 PM",
+    "loanAmount": "₦903,741.00",
+    "phoneNumber": "08076021938",
+    "organization": "Zillactic",
+    "accountNumber": "3972912374",
+    "savingsAmount": "₦250,270.00",
+    "educationAndEmployment": {
+      "officeEmail": "reed@konnect.com",
+      "loanRepayment": "₦49,381",
+      "monthlyIncome": "₦179,437 - ₦505,989",
+      "employmentStatus": "Unemployed",
+      "levelOfEducation": "Ph.D",
+      "sectorOfEmployment": "Education",
+      "durationOfEmployment": "4 years"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+.custom-pagination {
+  
+  nav {
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .MuiPagination-ul {
+      justify-content: center;
+      gap: 0;
+    }
+  
+    .MuiPaginationItem-root {
+      color: #545F7D;
+      font-size: 16px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  
+    /* The active/current page */
+    .Mui-selected {
+      background-color: transparent !important;
+      color: #545F7D !important;
+      font-weight: bold;
+    }
+  
+    /* The arrow icons (next/previous) */
+    .MuiPaginationItem-previousNext {
+      color: #545F7D;
+      background-color: #213F7D1A;
+      width: 20px;
+      height: 26px;
+      border-radius: 4px;
+    }
+  
+    /* The ellipsis (dots) */
+    .MuiPaginationItem-ellipsis {
+      color: #6c757d;
+      font-size: 20px;
+    }
+  }
+  
