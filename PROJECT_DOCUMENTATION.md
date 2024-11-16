@@ -29,3 +29,4 @@
 
   The application will be available at `http://localhost:3000`.
 
+  Visit `[the preview of the application here](https://okoye-victor-chibuzo-lendsqr-fe-test.vercel.app/)`.
