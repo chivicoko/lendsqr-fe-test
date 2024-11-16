@@ -13,10 +13,10 @@ const workSans = Work_Sans({
 
 export const metadata = {
   title: {
-    default: "Lendsqr Dashboard | Online Store for Groceries of all sorts",
+    default: "Lendsqr Dashboard | Securely borrow / Lend as much as you want.",
     template: "%s | Lendsqr Dashboard",
   },
-  description: "Lendsqr Dashboard is the number 1 Online store for groceries of all sorts, making buying and selling of groceries really easy for everyone.",
+  description: "Lendsqr Dashboard is the admin area of Lendsqr",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

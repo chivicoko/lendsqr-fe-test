@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { userStats } from '@/utils/data';
 import { User } from '@/utils/types';
 import { fetchUsers } from '@/lib/api';
+import Loading from '@/app/loading';
+import Error from '@/app/error';
 
 const UserStats = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -38,8 +40,11 @@ const UserStats = () => {
     fetchAllUsers();
   }, []);
 
-  console.log(users, loading, error);
-
+  if (loading) <Loading />;
+  if (error) <Error />;
+  console.log(users);
+  
+  
   return (
     <section className="stats">
         <ul>
