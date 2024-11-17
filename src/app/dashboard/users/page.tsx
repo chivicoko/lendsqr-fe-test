@@ -15,7 +15,6 @@ const Users = () => {
           </div>
         </div>
 
-
         <UserStats />
 
         <UserTable />

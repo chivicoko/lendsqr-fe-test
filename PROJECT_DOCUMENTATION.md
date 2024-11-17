@@ -2,7 +2,7 @@
   # Project Documentation
 
   ## Overview
-  This is Users management dashboard task
+  This is Users management dashboard task. Using a horizontally scrollable table of users, I made sure it's easy to use in all devices.
   
   ## Technology Stack
 
