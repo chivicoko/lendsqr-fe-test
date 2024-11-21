@@ -64,25 +64,25 @@ body {
 @keyframes l6 {to { rotate: 1turn; }}
 
 
-// custom scrollbar
+/* scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
-  // display: none;
+  /* display: none; */
   height: 4px;
+  width: 5px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #E3E4E6;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #545f7d11;
+  background: #213F7D;
   border-radius: 8px;
-  height: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #545f7d11;
+  width: 2px;
+  cursor: pointer;
 }
 
 

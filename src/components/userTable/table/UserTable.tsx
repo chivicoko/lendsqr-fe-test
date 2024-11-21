@@ -18,8 +18,8 @@ const UserTable: React.FC = () => {
   const [clickedBtns, setClickedBtns] = useState<{ [key: number]: boolean }>({});
 
   const [users, setUsers] = useState<User[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
   const [loading, setLoading] = useState<boolean>(true);
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const [usersPerPage, setUsersPerPage] = useState<number>(10);
   const [totalUsers, setTotalUsers] = useState<number>(0);
 

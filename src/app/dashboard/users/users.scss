@@ -6,6 +6,7 @@
     
     .usersWrapper {
         padding-inline: 3.5rem;
+        padding-top: 1.4rem;
 
         .headArea {
             display: flex;
@@ -34,14 +35,14 @@
 @media (max-width: 1286px) {
     .userDetails {
         .usersWrapper {
-            // padding-inline: 3rem;
+            padding-inline: 3rem;
         }
     }
 }
 
 @media (max-width: 1200px) {
     .userDetails {
-        width: 65vw;
+        width: 70vw !important;
 
         .usersWrapper {
             padding-inline: 3rem;
@@ -51,17 +52,28 @@
 
 @media (max-width: 1024px) {
     .userDetails {
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         min-height: 100vh;
         
         .usersWrapper {
-            padding-inline: 2rem;
+            padding-top: 0;
+            // padding-inline: 2rem;
         }
     }
 }
 
 @media (max-width: 768px) {
+    .userDetails {
+
+        .usersWrapper {
+            // padding-inline: 1.5rem;
+
+        }
+    }
+}
+
+@media (max-width: 699px) {
     .userDetails {
 
         .usersWrapper {
