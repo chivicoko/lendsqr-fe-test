@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  font-family: var(--font-workSans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.pageContainer {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 480px) {
+  nav.sideBarNav {
+      display: none;
+  }
+}
+
+
+// loader
+.loaderContainer {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: .5;
+  z-index: 999;
+}
+
+.loader {
+  display: inline-grid;
+  width: 40px;
+  aspect-ratio: 1;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#213F7D 0 60deg, #39CDCC 0 120deg);
+  animation: l6 4s linear infinite;
+}
+.loader:before {
+  translate: 0 -100%;
+}
+.loader:after {
+  padding: 20%;
+  mask: conic-gradient(#000 0 0) content-box exclude, conic-gradient(#000 0 0);
+  animation-direction: reverse;
+}
+@keyframes l6 {to { rotate: 1turn; }}
+
+
+/* scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  /* display: none; */
+  height: 4px;
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #E3E4E6;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #213F7D;
+  border-radius: 8px;
+  width: 2px;
+  cursor: pointer;
+}
+
+
+// toast
+// .Toastify__toast {
+//   @apply bg-gray-800 text-white;
+// }
+
+// .Toastify__toast--success {
+//   @apply bg-green-500;
+// }
+
+// .Toastify__toast--error {
+//   @apply bg-red-500;
+// }
+
+// .Toastify__toast-body {
+//   @apply text-sm;
+// }
+
+// .Toastify__close-button {
+//   @apply text-white;
+// }

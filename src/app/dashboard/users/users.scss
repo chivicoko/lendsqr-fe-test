@@ -1,0 +1,94 @@
+.userDetails {
+    padding-block: 3rem;
+    width: 80%;
+    background: #f1f1f1;
+    // border: 1px solid red;
+    
+    .usersWrapper {
+        padding-inline: 3.5rem;
+        padding-top: 1.4rem;
+
+        .headArea {
+            display: flex;
+            justify-content: space-between;
+            // margin-bottom: .3rem;
+            padding-block: 0;
+            // margin-top: -1.4rem;
+            
+            .title {
+                display: flex;
+                align-items: center;
+    
+                h1 {
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28.15px;
+                    color: #213F7D;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1286px) {
+    .userDetails {
+        .usersWrapper {
+            padding-inline: 3rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .userDetails {
+        width: 70vw !important;
+
+        .usersWrapper {
+            padding-inline: 3rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .userDetails {
+        width: 100% !important;
+        height: 100%;
+        min-height: 100vh;
+        
+        .usersWrapper {
+            padding-top: 0;
+            // padding-inline: 2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .userDetails {
+
+        .usersWrapper {
+            // padding-inline: 1.5rem;
+
+        }
+    }
+}
+
+@media (max-width: 699px) {
+    .userDetails {
+
+        .usersWrapper {
+            padding-inline: 1.5rem;
+
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .userDetails {
+
+        .usersWrapper {
+            padding-inline: 1rem;
+
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.stats {
+    padding-block: 2rem;
+    padding-inline: 0;
+    width: 100%;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+  
+      li {
+        list-style: none;
+        flex: 1;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: .3rem;
+        background: #fff;
+        border-radius: 4px;
+        padding: 20px 30px;
+  
+        .userImg {
+          position: relative;
+          width: 40px;
+          height: 40px;
+  
+          .img {
+            object-fit: contain;
+          }
+        }
+  
+        p.text {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.42px;
+          color: #545F7D;
+          text-transform: uppercase;
+          width: 100%;
+        }
+  
+        p.number {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 28.15px;
+          width: 100%;
+          color: #213F7D;
+          margin: 0;
+        }
+      }
+    }
+    
+
+  @media (max-width: 1199px) {
+      ul {
+          gap: 1.5rem;
+
+          li {
+            flex: 1 1 35%;
+            padding: 15px 20px;
+            gap: 0.2rem;
+      
+            span.text {
+              font-size: 12px;
+              line-height: 14px;
+            }
+      
+            span.number {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+      }
+  }
+
+  @media (max-width: 1024px) {
+      ul {
+          gap: 1.5rem;
+
+          li {
+            flex: 1 1 35%;
+            padding: 15px 20px;
+      
+            .userImg {
+              width: 35px;
+              height: 35px;
+            }
+      
+            span.text {
+              font-size: 12px;
+              line-height: 14px;
+            }
+      
+            span.number {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+      }
+  }
+
+  @media (max-width: 768px) {}
+  
+  @media (max-width: 480px) {
+    ul {
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    li {
+      flex: 1 1 45%;
+      padding: 10px 15px;
+
+      span.text {
+        font-size: 11px;
+        line-height: 12px;
+      }
+
+      span.number {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+  

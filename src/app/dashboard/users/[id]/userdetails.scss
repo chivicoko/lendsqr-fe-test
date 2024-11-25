@@ -1,0 +1,177 @@
+.userDetails {
+    padding-block: 3rem;
+    padding-inline: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #f1f1f1;
+    width: 80%;
+
+    button.backBtn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: fit-content;
+        gap: 12px;
+        background: none;
+        border: none;
+        padding-block: 0;
+        margin-block: 0;
+        // border: 1px solid black;
+
+        .userleftArrowIcon {
+            position: relative;
+            width: 27px;
+            height: 10px;
+            
+            .img {
+                object-fit: contain;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.77px;
+            color: #545F7D;
+        }
+
+        &:hover {
+            .userleftArrowIcon {
+                transform: translateX(-5px);
+                transition: all 0.3 ease-in;
+            }
+        }
+    }
+
+    .headArea {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: -1.4rem;
+        margin-bottom: .3rem;
+        padding-block: 0;
+        
+        .title {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28.15px;
+                color: #213F7D;
+            }
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            // border: 1px solid violet;
+
+            button.blacklistBtn {
+                cursor: pointer;
+                border: 1px solid #E4033B;
+                border-radius: 8px;
+                background: transparent;
+                padding: .7rem 1.4rem;
+                color: #E4033B;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.42px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #E4033B;
+                    border: 1px solid transparent;
+                }
+            }
+
+            button.activateBtn {
+                cursor: pointer;
+                border: 1px solid #39CDCC;
+                border-radius: 8px;
+                background: transparent;
+                padding: .7rem 1.4rem;
+                color: #39CDCC;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.42px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #39CDCC;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1285px) {
+    
+}
+
+@media (max-width: 1274px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .userDetails {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    .userDetails {
+        padding-top: 1rem;
+        padding-inline: 1rem;
+        
+        .headArea {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: -1.4rem;
+            margin-bottom: .3rem;
+            padding-block: 0;
+            
+            .title {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+
+            .btns {
+                gap: .8rem;
+
+                button.blacklistBtn {
+                    border-radius: 6px;
+                    padding-inline: .5rem;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 14.42px;
+                }
+                
+                button.activateBtn {
+                    border-radius: 6px;
+                    padding-inline: .5rem;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 14.42px;
+                }
+            }
+        }
+    }
+}

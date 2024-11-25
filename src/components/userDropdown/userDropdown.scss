@@ -1,0 +1,107 @@
+
+.userDropDownMenu {
+    position: absolute;
+    top: 4.6rem;
+    right: -1.4rem;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    z-index: 99999;
+    background: #fff;
+    width: 180px;
+    height: fit-content;
+    
+    &.open {
+        display: block;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1rem;
+        color: #545f7d;
+        padding: 1rem 1.3rem 0;
+    }
+
+    hr {
+        border: 1px solid #545f7d17;
+    }
+    
+    ul {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 .5rem;
+        
+        li {
+            width: 100%;
+            list-style: none;
+            overflow: hidden;
+            
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: flex-start;
+                gap: .5rem;
+
+                &:focus {
+                    // pointer-events: none;
+                    outline: none;
+                    user-select: none;
+                }
+            }
+
+            .menuBtn {
+                cursor: pointer;
+                border: none;
+                background: transparent;
+                padding: .6rem 1.3rem;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                gap: .5rem;
+
+                &:hover {
+                    background: #545f7d11;
+                }
+
+                .menuIcon {
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    
+                    .img {
+                        object-fit: contain;
+                    }
+                }
+
+                span {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16.42px;
+                    color: #545F7D;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .userDropDownMenu {
+        top: 4rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .userDropDownMenu {
+        right: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .userDropDownMenu {
+        right: 4rem;
+    }
+}
