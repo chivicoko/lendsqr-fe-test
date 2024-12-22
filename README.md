@@ -12,7 +12,7 @@ npm install
 ```
 
 ### 3. Run the Development Server
-Once the dependencies are installed, you can start the Vue development server:
+Once the dependencies are installed, you can start the development server:
 ```bash
 npm run dev
 ```
